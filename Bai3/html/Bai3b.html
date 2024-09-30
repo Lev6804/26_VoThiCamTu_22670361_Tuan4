@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 3b</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 5px auto;
+        }
+        .container{
+            width: 600px;
+            height: 500px;
+            background-color: orange;
+            border: dotted pink 10px;
+        }
+        #title{
+            color: blueviolet;
+            text-align: center;
+        }
+        nav{
+            width: 100%;
+            height: 50px;
+        }
+        a:hover{
+            background-color: chocolate;
+        }
+        #mfbt_dn{
+            width: 450px;
+            height: 50px;
+            background-color: RGB(244,100,0);
+            border: none;
+            color: beige;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 500;
+        }
+        #menuDk1, #menuDk2{
+            color: darkgrey;
+    
+            
+        }
+        #mt_h41{
+            color: darkgrey;
+            /* width: 144px; */
+            /* margin-right: 100px; */
+        }
+        #mt_h6{
+            color: darkgrey;
+            /* text-decoration: solid; */
+        }
+        #hang1{
+            width: 400px;
+        }
+        #chinhsach{
+            text-decoration: none;
+            color: RGB(244,100,0);
+        }
+    </style>
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("#menuDk").click(function(){
+                $("#myModal").modal();
+            });
+        });
+        $(document).ready(function(){
+            $("#menuDk1").click(function(){
+                $(this).css("color", "RGB(244,100,0)")
+                $(this).css("border-bottom", "RGB(244,100,0) 2px solid")
+                $("#menuDk2").css("color", "darkgrey")
+                $("#menuDk2").css("border-bottom", "none")
+                $("#myModal").modal();
+            });
+        });
+        $(document).ready(function(){
+            $("#menuDk2").click(function(){
+                $(this).css("color", "RGB(244,100,0)")
+                $(this).css("border-bottom", "RGB(244,100,0) 2px solid")
+                $("#menuDk1").css("color", "darkgrey")
+                $("#menuDk1").css("border-bottom", "none")
+                $("#myModal2").modal();
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div clas="row">
+            <h3 id="title">Rạp phim của những giấc mơ</h3>
+        </div>
+        <div class="row">
+            <nav class="navbar navbar-expand-md bg-dark navbar-dark ">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                      <a class="nav-link active text-light" href="#">Mua Vé</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link text-light" href="#">Phim Hot</a>
+                    </li>
+                    <li class="nav-item text-light">
+                      <a class="nav-link text-light" href="#">Xuất chiếu</a>
+                    </li>
+                    <li class="nav-item text-light">
+                      <a class="nav-link disabled text-light" href="#">Rạp</a>
+                    </li>
+                    <li class="nav-item text-light">
+                        <!-- <a class="nav-link disabled text-light" href="#" id="DN"></a> -->
+                        <button type="button" id="menuDk" class="btn btn-primary mt-2 ml-2" data-toggle="modal" data-bs-target="#myModal">Đăng Nhập</button>
+                        
+                    </li>
+                  </ul>
+            </nav>
+        </div>
+        <div class="row">
+           <div id="demo" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                    <li data-target="#demo" data-slide-to="3"></li>
+                    <li data-target="#demo" data-slide-to="4"></li>
+                    <li data-target="#demo" data-slide-to="5"></li>
+                </ul>
+                
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="../image/conan1.jpg" alt="" width="550" height="200">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="../image/conan2.jpg" alt="" width="550" height="200">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="../image/conan3.jpg" alt="" width="550" height="200">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../image/conan4.jpg" alt="" width="550" height="200">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../image/conan5.jpg" alt="" width="550" height="200">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../image/conan6.jpg" alt="" width="550" height="200">
+                    </div>
+                </div>
+  
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+        <div class="row" >
+            
+
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-mg">
+                <div class="modal-content">
+                    <div class="modal-header p-100">
+                        <h4 class="modal-title" id="menuDk1" data-toggle="modal" data-bs-target="#myModal" >Đăng Nhập</h4>
+                        
+                        <h4 id="mt_h41">&nbsp; / &nbsp;</h4>
+                        <h4 class="modal-title" id="menuDk2" data-toggle="modal" data-bs-target="#myModal">Đăng ký</h4>
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div id="row">
+                            <h6 id="mt_h6" class="mt-3">
+                                Vui lòng đăng nhập trước khi mua vé  để tích điểm, cơ hội nhận thêm nhiều ưu đãi từ chương trình thành viên rạp phim của những giấc mơ  
+                            </h6>
+                        </div>
+                        <div class="row">
+                            <input type="text" name="email" id="email" placeholder="Email" class="form-control mt-3 mr-3 ml-3">
+                        </div>
+                        <div class="row">
+                            <input type="text" name="MK" id="MK" placeholder="Mật Khẩu" class="form-control mt-3 mr-3 ml-3">
+                        </div>
+                        <div id="row">
+                            <h6 id="mt_h6" class="mt-3">
+                                Quên Mật Khẩu?
+                            </h6>
+                        </div>
+                        <div class="row">
+                            
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="submit" id="mfbt_dn">Đăng Nhập</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="row">
+            <div class="modal fade" id="myModal2">
+                <div class="modal-dialog modal-mg">
+                    <div class="modal-content">
+                        <div class="modal-header p-100">
+                            <h4 class="modal-title" id="menuDk1" data-toggle="modal" data-bs-target="#myModal" >Đăng Nhập</h4>
+                            
+                            <h4 id="mt_h41">&nbsp; / &nbsp;</h4>
+                            <h4 class="modal-title" class="modal-title" id="menuDk2" data-toggle="modal" data-bs-target="#myModal">Đăng ký</h4>
+                            <button type="button" class="close" data-dismiss="modal">×</button>
+                        </div>
+    
+                        <div class="modal-body">
+                            <div id="row"  id="hang1">
+                                <input type="text" name="hoten" id="hoten" placeholder="Họ Tên" class="form-control mt-3 mr-3 ml-1">
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <input type="text" name="sdt" id="sdt" placeholder="Số điện thoại" class="form-control mt-3 mr-3 ">
+                                </div>
+                                <div class="col-6">
+                                    <select class="form-control mt-3 mr-3 ml-1">
+                                            <option value="Chọn Giới Tinh">Chọn Giới Tính</option>
+                                            <option value="Chọn Giới Tinh">Nam</option>
+                                            <option value="Chọn Giới Tinh">Nữ</option>
+                                            <option value="Chọn Giới Tinh">Khác</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <input type="text" name="email" id="email" placeholder="Email" class="form-control mt-3 mr-3 ml-3">
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <input type="text" name="Mk" id="MK" placeholder="Mật Khẩu" class="form-control mt-3 mr-3 ">
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" name="xnMk" id="xnMK" placeholder="Xác nhận mật khẩu" class="form-control mt-3 mr-3 ">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <select class="form-control mt-3 mr-">
+                                        <option value="Chọn Giới Tinh">Chọn Thành Phố</option>
+                                    </select>
+                                </div>
+                                <div class="col-6">
+                                    <select class="form-control mt-3 mr-3 ">
+                                            <option value="Chọn Giới Tinh">Chọn Quận</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <input type="text" name="diachi" id="diachi" placeholder="Địa chỉ" class="form-control mt-3 mr-3 ml-3">
+                            </div>
+                            <div class="row">
+                                <input type="text" name="date" id="date" placeholder="Chọn ngày (dd//mm//yy)" class="form-control mt-3 mr-3 ml-3">
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <img src="../image/Ảnh chụp màn hình 2024-03-13 065838.png" alt="" class="mt-3 mr-3 ml-3">
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" name="captcha" id="captcha" placeholder="Nhập mã captcha" class="form-control mt-3 mr-6 ">
+                                </div>
+                            </div>
+                            <div class="row mt-3 mr-3">
+                                <h6>
+                                    Tôi đã đọc và đồng ý với <a href="" id="chinhsach">Chính sách</a> của chương trình
+                                </h6>
+                            </div>
+                        </div>
+    
+                        <div class="modal-footer">
+                            <button type="submit" id="mfbt_dn">Đăng Ký</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+</body>
+</html>

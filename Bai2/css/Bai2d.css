@@ -1,0 +1,40 @@
+
+.container{
+    width: 600px;
+    height: auto;
+    border: 2px solid rgba(87, 87, 85, 0.812);
+    box-shadow: 1px 2px 2px rgba(87, 87, 85, 0.812),
+    1px 3px 3px rgba(197, 42, 68, 0.512);
+}
+/* .row{
+    border: 1px dotted red;
+} */
+#lg1, #lg2, #lg3, #lg4, #lg5, #lg6{
+    color: rgb(113, 218, 28);
+    /* display: none; */
+}
+#pls1, #pls2, #pls3, #pls4, #pls5, #pls6{
+    color: red  ;
+    /* display: none; */
+}
+#lg3{
+    display: none;
+}
+#pls3{
+    display: inline;
+}
+.input-group-addon{
+    border: 1px solid black;
+    text-align: center;
+}
+#submitform{
+    border: none;
+    background-color: dodgerblue;
+    color: aliceblue;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px; 
+}
+/* #a1{
+    position: absolute;
+} */

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 2d Nguyễn Thành Trung 22696701</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="../js/Bai2d.js"></script>
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="../css/Bai2d.css">
+    
+</head>
+<body>
+
+    </script>
+    <div class="container">
+        <div class="row">
+            <div class="col-4 ml-3 ">
+                <div class="row">
+                    <h5>Frist name</h5>
+                </div>  
+                <form action="/action_page.php" class="was-validated">
+                    <div class="row">
+                    
+                        <input type="text" id="fristname" class="form-control" placeholder="Frist name" required >
+                        <div class="valid-feedback"><h5 id="lg1">Looks good!</h5></div>
+                        <div class="invalid-feedback"><h5 id="pls1">Please provide a valid Frist name.</h5></div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-4 ml-3">
+                <div class="row">
+                    <h5>Last name</h5>
+                </div>
+                <form action="/action_page.php" class="was-validated">
+                    <div class="row">
+                        <input type="text" id="lastname" class="form-control" placeholder="Last name" required>
+                        <div class="valid-feedback"><h5 id="lg2">Looks good!</h5></div>
+                        <div class="invalid-feedback"><h5 id="pls2">Please provide a valid Last name.</h5></div>
+                    </div>
+                </form>
+            </div>   
+            <div class="col-3 ml-3">
+                <div class="row">
+                    <h5>User name</h5>
+                </div>
+                <form action="/action_page.php" class="was-validated">
+                    <div class="row">
+                        <div class="input-group">
+                                <span class="input-group-addon">@</span>
+                            <input type="text" id="username" class="form-control" placeholder="User name" required  onchange="fristname()">
+                            
+                        </div>
+                            <h5 id="lg3">Looks good!</h5>
+                            <h5 id="pls3">Please choose a User name.</h5>
+                        
+                    </div>
+                </form>
+                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-7 ml-3">
+                <div class="row">
+                    <h5>City</h5>
+                </div>
+                <form action="/action_page.php" class="was-validated">
+                    <div class="row">
+                        <input type="text" id="city" class="form-control" placeholder="City" required>
+                        <div class="valid-feedback"><h5 id="lg44">Looks good!</h5></div>
+                        <div class="invalid-feedback"><h5 id="pls4">Please provide a valid City.</h5></div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-2 ml-3">
+                <div class="row">
+                    <h5>State</h5>
+                </div>
+                <form action="/action_page.php" class="was-validated">
+                    <div class="row">
+                        <input type="text" id="state" class="form-control" placeholder="State" required>
+                        <div class="valid-feedback"><h5 id="lg5">Looks good!</h5></div>
+                        <div class="invalid-feedback"><h5 id="pls5">Please provide a valid State.</h5></div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-2 ml-3">
+                <div class="row">
+                    <h5>Zip</h5>
+                </div>
+                <form action="/action_page.php" class="was-validated">
+                    <div class="row">
+                        <input type="text" id="zip" class="form-control" placeholder="Zip" required>
+                        <div class="valid-feedback"><h5 id="lg6">Looks good!</h5></div>
+                        <div class="invalid-feedback"><h5 id="pls6">Please provide a valid Zip.</h5></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-10 ml-0 p-0">
+                <div class="form-check">
+                    
+                    
+                    
+                <form action="/action_page.php" class="was-validated">
+                    <input class="form-check-input mt-2" type="checkbox" id="check1"  name="remember" required>
+                    <label class="form-check-label ml-4 " for="myCheck">Agrre to termsrms and conditions</label>
+                    <div class="valid-feedback ml-4 mt-0 pt-0">You must agrre before submitting.</div>
+                    <div class="invalid-feedback ml-4 mt-0 pt-0">You must agrre before submitting.</div>
+                </form>
+                </div>
+            </div>
+        </div>
+        <div class="row ml-0 p-0 mt-4 mb-4 ">
+            <button type="button" id="submitform" >Submit form</button>
+        </div>
+    </div>
+</body>
+</html>
